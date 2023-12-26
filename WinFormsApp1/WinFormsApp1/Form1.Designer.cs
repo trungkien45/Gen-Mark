@@ -31,6 +31,7 @@
             listBox1 = new ListBox();
             textBox1 = new TextBox();
             button1 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // listBox1
@@ -64,11 +65,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Location = new Point(233, 24);
+            label1.Name = "label1";
+            label1.Size = new Size(46, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Count: ";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(328, 450);
+            Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(listBox1);
@@ -84,5 +96,6 @@
         private ListBox listBox1;
         private TextBox textBox1;
         private Button button1;
+        private Label label1;
     }
 }

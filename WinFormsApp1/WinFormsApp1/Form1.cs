@@ -97,6 +97,7 @@ namespace WinFormsApp1
         {
             listBox1.Items.Clear();
             var a = convertKeyWord(textBox1.Text.ToLower());
+            label1.Text = "Count: " + a.Count;
             foreach (var item in a)
             {
                 if (!string.IsNullOrEmpty(item))
